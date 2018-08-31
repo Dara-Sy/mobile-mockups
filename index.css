@@ -1,15 +1,102 @@
 
+/* declare variable font color*/
+:root {
+  --font-color: #081c3d;
+  --other-font-color: #000000;
+}
+
+body {
+  padding: 30px;
+}
+
+.text {
+  text-align: center;
+}
+
+.mockup-space {
+  height: 100%;
+  padding: 5px;
+}
+
 .mockup {
-  /*width: 50%;*/
-  width: 80vw;
+  width: 71vw;
 }
 
 .mockup1 {
-  /*width: 63%;*/
-    width: 100vw;
+    width: 90vw;
+}
+
+h1 {
+  color: var(--font-color);
+  font-family: 'Unica One', cursive;
+  text-align: center;
+  font-size: 3em;
 }
 
 h2 {
-  color: #081c3d;
+  color: var(--font-color);
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  font-size: 3em;
+}
+
+h3 {
+  font-family: 'Cookie', cursive;
+  font-size: 2.5em;
+  position: relative;
+  margin-bottom: 0.5px;
+  /*left: 2%;*/
+}
+
+p, footer {
+  color: var(--other-font-color);
   font-family: 'Unica One', cursive;
+  font-size: 1.5em;
+}
+
+
+/* responsiveness*/
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.5em;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .paragraph {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .mockup-space {
+    height: 100%;
+  }
+
+  .mockup {
+    width: 72vw;
+  }
+
+  .mockup1 {
+    width: 90vw;
+  }
+
 }
