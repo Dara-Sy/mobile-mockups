@@ -5,6 +5,11 @@
   --other-font-color: #000000;
 }
 
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
 body {
   padding: 30px;
 }
